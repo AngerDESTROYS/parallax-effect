@@ -17,7 +17,6 @@ function update(cursorPosition) {
     let zValue =
       (cursorPosition - parseFloat(getComputedStyle(el).left)) * isInLeft * 0.1;
 
-    el.style.transition = 'transform 0.3s ease-out';  // Adjust the duration and easing as needed
     el.style.transform = `rotateY(${
       rotateDegree * rotateSpeed
     }deg) translateX(calc(-50% + ${
